@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    align-items: center;
-    
+
 }
 
 img {
@@ -49,10 +48,10 @@ img {
 @keyframes up {
     0% {
         opacity: 0;
-        transform: translateY(100px) scale(2);
+        transform: translateY(100px) scale(2) translateX(100px);
     }
     30% { 
         opacity: 1;
-        transform: rotate(360deg);
+        transform: rotate(360deg) translateY(100px) translateX(100px) scale(-2);
     }
 }
