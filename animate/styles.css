@@ -1,13 +1,18 @@
 body {
     margin: 0;
+    align-items: center;
+    
 }
 
 img {
     width: 300px;
     /* transition: .5s; */
-    animation: mover 2s;
-    animation-name: mover;
+    animation: up 2s;
+    animation-name: up;
     animation-duration: 2s;
+    /* animation-fill-mode: backwards; */
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 
 }
 
@@ -21,6 +26,8 @@ img {
     transform: rotate(360deg) scale(2) translate(100px);
 } */
 
+
+/*
 @keyframes mover{
     from {
         transform: translateX(0)
@@ -36,5 +43,16 @@ img {
     }
     to {
         box-shadow: 0 0 30 black;
+    }
+} */
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) scale(2);
+    }
+    30% { 
+        opacity: 1;
+        transform: rotate(360deg);
     }
 }
