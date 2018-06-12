@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+img {
+    width: 300px;
+    /* transition: .5s; */
+    animation: mover 2s;
+    animation-name: mover;
+    animation-duration: 2s;
+
+}
+
+ /* img:hover {
+    filter: grayscale(80%);  blur (20px); 
+    box-shadow: 0 0 30px black;
+    transform: scale(2); / aumentar escala / 
+    transform: translate(100px);  /  transladar /
+    transform: rotate(360deg); / rotacionar / 
+    /* pode-se  utilizar as propriedades de transfomr juntas ex: /
+    transform: rotate(360deg) scale(2) translate(100px);
+} */
+
+@keyframes mover{
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes sombra { 
+    from {
+        box-shadow: 0 black;
+    }
+    to {
+        box-shadow: 0 0 30 black;
+    }
+}
